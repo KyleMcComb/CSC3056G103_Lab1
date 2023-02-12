@@ -1,6 +1,6 @@
 package tests;
 
-import module.User;
+import model.User;
 public class UserTest {
     public static void main(String[] args) {
         /* OLD MANUAL TESTING
@@ -50,6 +50,21 @@ public class UserTest {
         if (passed) {
             System.out.println("All TC's passed.");
         }
+
+        //using assert's
+
+        assert testUser.getUsername() == test_username;
+        //assert 1==2;
+
+        assert testUser.getPasswords() == test_password;
+
+        assert testUser.getFirst_name() == test_first_name;
+
+        assert testUser.getLast_name() == test_last_name;
+
+        assert testUser.getMobile_number() == test_mobile_number;
+
+        System.out.println("All Java assertions in the test suit passed (none failed).");
 
     }
 
